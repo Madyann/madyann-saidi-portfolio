@@ -1,6 +1,20 @@
 // Engineering Portfolio Projects Data
 // This is your template data structure - easily customize by updating this file
 
+import otvThumbnail from './assets/project-otv.jpg';
+import otvVideo from './assets/project-otv.mp4';
+import otvPoster from './assets/project-otv-poster.jpg';
+import yumiThumbnail from './assets/project-yumi.jpg';
+import yumiVideo from './assets/project-yumi.mp4';
+import yumiPoster from './assets/project-yumi-poster.jpg';
+import frcThumbnail from './assets/project-frc.jpg';
+import frcVideo from './assets/project-frc.mp4';
+import frcPoster from './assets/project-frc-poster.jpg';
+import quadrupedThumbnail from './assets/project-quadruped.jpg';
+import prostheticThumbnail from './assets/project-prosthetic.jpg';
+import icraThumbnail from './assets/project-icra.jpg';
+import matlabThumbnail from './assets/project-matlab.jpg';
+
 export interface Project {
   id: string;
   title: string;
@@ -35,7 +49,7 @@ export const projects: Project[] = [
     slug: "seed-planting-otv",
     year: 2025,
     tags: ["Design", "Software"],
-    thumbnail: "/src/assets/project-otv.jpg",
+    thumbnail: otvThumbnail,
     shortDescription:
       "Eight-person project: an Arduino-based over-terrain vehicle that autonomously plants seeds and retrieves rocks.",
     overview:
@@ -50,8 +64,8 @@ export const projects: Project[] = [
     repoLink: "",
     demoLink: "",
     featured: true,
-    video: "/src/assets/project-otv.mp4",
-    imagePoster: "/src/assets/project-otv-poster.jpg"
+    video: otvVideo,
+    imagePoster: otvPoster
   },
   {
     id: "yumi-rubiks-cube-solver",
@@ -59,7 +73,7 @@ export const projects: Project[] = [
     slug: "yumi-rubiks-cube-solver",
     year: 2025,
     tags: ["Design", "Software"],
-    thumbnail: "/src/assets/project-yumi.jpg", // update path or name as needed
+    thumbnail: yumiThumbnail, // update path or name as needed
     shortDescription:
       "Vision-guided ABB YuMi system that inspects and solves a 2×2×2 Rubik’s cube autonomously.",
     overview:
@@ -75,8 +89,8 @@ export const projects: Project[] = [
     repoLink: "",   // add URL if the code is public
     demoLink: "",   // add video/demo link if available
     featured: true,
-    video: "/src/assets/project-yumi.mp4",
-    imagePoster: "/src/assets/project-yumi-poster.jpg"
+    video: yumiVideo,
+    imagePoster: yumiPoster
   },
 
   {
@@ -85,7 +99,7 @@ export const projects: Project[] = [
     slug: "frc-1389-robot",
     year: 2024,
     tags: ["Design", "Software"],
-    thumbnail: "/src/assets/project-frc.jpg",
+    thumbnail: frcThumbnail,
     shortDescription:
       "Four-roller shooter with ArUco-based autonomous aiming and a redesigned durable chassis.",
     overview:
@@ -100,8 +114,8 @@ export const projects: Project[] = [
     repoLink: "",
     demoLink: "",
     featured: true,
-    video: "/src/assets/project-frc.mp4",
-    imagePoster: "/src/assets/project-frc-poster.jpg"
+    video: frcVideo,
+    imagePoster: frcPoster
   },
   {
     id: "testudog-quadruped",
@@ -109,7 +123,7 @@ export const projects: Project[] = [
     slug: "testudog-quadruped",
     year: 2025,
     tags: ["Design"],
-    thumbnail: "/src/assets/project-quadruped.jpg",
+    thumbnail: quadrupedThumbnail,
     shortDescription:
       "Competition-grade quadruped robot with zero-gravity integration test rig.",
     overview:
@@ -132,7 +146,7 @@ export const projects: Project[] = [
     slug: "prosthetic-hand-m2",
     year: 2024,
     tags: ["Design"],
-    thumbnail: "/src/assets/project-prosthetic.jpg",
+    thumbnail: prostheticThumbnail,
     shortDescription:
       "Single-motor prosthetic hand with 20+ modular 3-D-printed parts and 32 grasp modes.",
     overview:
@@ -154,7 +168,7 @@ export const projects: Project[] = [
     slug: "icra-modular-board",
     year: 2024,
     tags: ["Design"],
-    thumbnail: "/src/assets/project-icra.jpg",
+    thumbnail: icraThumbnail,
     shortDescription:
       "Redesigned ICRA manipulation board into four modular quadrants for higher task complexity.",
     overview:
@@ -176,7 +190,7 @@ export const projects: Project[] = [
     slug: "pressure-sensor-analysis",
     year: 2025,
     tags: ["Software"],
-    thumbnail: "/src/assets/project-matlab.jpg",
+    thumbnail: matlabThumbnail,
     shortDescription:
       "Automated test rig that quantifies pressure distribution in human-robot contact scenarios.",
     overview:
