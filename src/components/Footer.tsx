@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -51,13 +52,13 @@ const Footer = () => {
             <h4 className="font-medium">Quick Links</h4>
             <div className="flex flex-col space-y-2">
               {quickLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.path}
+                  to={link.path}
                   className="text-muted-foreground hover:text-primary text-sm transition-colors"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
