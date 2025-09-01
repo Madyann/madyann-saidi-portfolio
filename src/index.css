@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Engineering Portfolio Design System
+   Dark theme with neon cyan accents and warm white text
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core engineering portfolio palette */
+    --background: 217 33% 5%;  /* Dark background #0D0D0D */
+    --foreground: 48 95% 97%;  /* Warm white text #F8F8F2 */
+
+    --card: 217 33% 8%;        /* Slightly lighter card bg */
+    --card-foreground: 48 95% 97%;
+
+    --popover: 217 33% 8%;
+    --popover-foreground: 48 95% 97%;
+
+    /* Neon cyan accent */
+    --primary: 189 100% 47%;   /* Neon cyan #00E0FF */
+    --primary-foreground: 217 33% 5%;
+
+    --secondary: 217 32% 17%;  /* Muted dark gray */
+    --secondary-foreground: 48 95% 97%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 220 13% 69%;  /* Muted text */
+
+    --accent: 189 100% 47%;    /* Neon cyan accent */
+    --accent-foreground: 217 33% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 48 95% 97%;
+
+    --border: 217 32% 15%;     /* Subtle borders */
+    --input: 217 32% 15%;
+    --ring: 189 100% 47%;      /* Cyan focus ring */
+
+    --radius: 0.75rem;         /* Slightly more rounded */
+
+    /* Engineering portfolio specific tokens */
+    --hero-glow: 189 100% 47%;           /* Cyan glow effect */
+    --tech-badge: 217 32% 12%;           /* Tech stack badges */
+    --project-hover: 217 32% 20%;        /* Project card hover */
+    --gradient-primary: linear-gradient(135deg, hsl(189 100% 47%), hsl(206 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 33% 5%), hsl(217 32% 8%));
+    --shadow-glow: 0 0 40px hsl(189 100% 47% / 0.2);
+    --shadow-card: 0 4px 20px hsl(217 33% 3% / 0.4);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Light mode */
+    --background-light: 48 95% 97%;  /* Light cream bg */
+    --foreground-light: 217 33% 5%;  /* Dark text */
+    --card-light: 0 0% 100%;         /* Pure white cards */
+    --border-light: 220 13% 91%;     /* Light borders */
+  }
+
+  .dark {
+    /* Already using dark theme as default */
+    --background: 217 33% 5%;
+    --foreground: 48 95% 97%;
+    --card: 217 33% 8%;
+    --card-foreground: 48 95% 97%;
+    --popover: 217 33% 8%;
+    --popover-foreground: 48 95% 97%;
+    --primary: 189 100% 47%;
+    --primary-foreground: 217 33% 5%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 48 95% 97%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 220 13% 69%;
+    --accent: 189 100% 47%;
+    --accent-foreground: 217 33% 5%;
+    --destructive: 0 62% 51%;
+    --destructive-foreground: 48 95% 97%;
+    --border: 217 32% 15%;
+    --input: 217 32% 15%;
+    --ring: 189 100% 47%;
+  }
+
+  .light {
+    --background: 48 95% 97%;
+    --foreground: 217 33% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 33% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 33% 5%;
+    --primary: 189 100% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 217 33% 5%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 189 100% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 189 100% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter selection:bg-primary/20;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space-grotesk;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer components {
+  /* Component-specific styles */
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(189 100% 47% / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(206 100% 50% / 0.05) 0%, transparent 50%);
+  }
+
+  .tech-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary border border-border transition-colors hover:bg-project-hover;
+  }
+
+  .project-card {
+    @apply relative bg-card border border-border rounded-xl overflow-hidden transition-colors duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  /* keep color change if you like, but no shadow bump */
+  .project-card:hover {
+    box-shadow: var(--shadow-card);
+    /* optional: keep border change or remove */
+    /* border-color: hsl(var(--primary) / .4); */
+  }
+
+  .glow-effect {
+    position: relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .glow-effect:hover::before {
+    opacity: 1;
+  }
+}
