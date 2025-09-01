@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   // Add this line right here
-  // base: '/madyann-saidi-portfolio/',
+  base: 'madyann-saidi-portfolio/',
   plugins: [
     react(),
     mode === 'development' &&
