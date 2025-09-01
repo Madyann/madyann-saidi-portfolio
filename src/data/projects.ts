@@ -1,19 +1,19 @@
 // Engineering Portfolio Projects Data
 // This is your template data structure - easily customize by updating this file
 
-import otvThumbnail from './assets/project-otv.jpg';
-import otvVideo from './assets/project-otv.mp4';
-import otvPoster from './assets/project-otv-poster.jpg';
-import yumiThumbnail from './assets/project-yumi.jpg';
-import yumiVideo from './assets/project-yumi.mp4';
-import yumiPoster from './assets/project-yumi-poster.jpg';
-import frcThumbnail from './assets/project-frc.jpg';
-import frcVideo from './assets/project-frc.mp4';
-import frcPoster from './assets/project-frc-poster.jpg';
-import quadrupedThumbnail from './assets/project-quadruped.jpg';
-import prostheticThumbnail from './assets/project-prosthetic.jpg';
-import icraThumbnail from './assets/project-icra.jpg';
-import matlabThumbnail from './assets/project-matlab.jpg';
+import otvThumbnail from '../assets/project-otv.jpg';
+import otvVideo from '../assets/project-otv.mp4';
+import otvPoster from '../assets/project-otv-poster.jpg';
+import yumiThumbnail from '../assets/project-yumi.jpg';
+import yumiVideo from '../assets/project-yumi.mp4';
+import yumiPoster from '../assets/project-yumi-poster.jpg';
+import frcThumbnail from '../assets/project-frc.jpg';
+import frcVideo from '../assets/project-frc.mp4';
+import frcPoster from '../assets/project-frc-poster.jpg';
+import quadrupedThumbnail from '../assets/project-quadruped.jpg';
+import prostheticThumbnail from '../assets/project-prosthetic.jpg';
+import icraThumbnail from '../assets/project-icra.jpg';
+import matlabThumbnail from '../assets/project-matlab.jpg';
 
 export interface Project {
   id: string;
