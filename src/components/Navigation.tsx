@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // ← remove Zap
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+import logo from '../assets/logo.jpg'; 
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +29,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <img
-              src="/logo.jpg"
+              src={logo}
               alt="Madyann Saidi logo"
               className="h-6 w-6 select-none draggable={false} transition-transform duration-500 group-hover:rotate-[360deg]"
             />
