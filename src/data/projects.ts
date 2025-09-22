@@ -147,7 +147,7 @@ export const projects: Project[] = [
     title: "Autonomous Fire and Smoke Detection Model",
     slug: "fire-detection",
     year: 2025,
-    tags: ["Software", "AI", "Autonomy"],
+    tags: ["Software"],
     thumbnail: firedetectionThumbnail,
     shortDescription:
       "Vision-based wildfire detection system for autonomous drone deployment using YOLO and computer vision.",
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     demoLink: "",
     featured: true
   },
-  
+
   {
     id: "prosthetic-hand-m2",
     title: "Pulley-Driven Prosthetic Hand (Project M²)",
