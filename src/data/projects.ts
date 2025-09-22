@@ -14,6 +14,8 @@ import quadrupedThumbnail from '../assets/project-quadruped.jpg';
 import prostheticThumbnail from '../assets/project-prosthetic.jpg';
 import icraThumbnail from '../assets/project-icra.jpg';
 import matlabThumbnail from '../assets/project-matlab.jpg';
+import firedetectionThumbnail from '../assets/fire-detection.jpg';
+
 
 export interface Project {
   id: string;
@@ -140,6 +142,30 @@ export const projects: Project[] = [
     featured: false
   },
 
+  {
+    id: "fire-detection-model",
+    title: "Autonomous Fire and Smoke Detection Model",
+    slug: "fire-detection",
+    year: 2025,
+    tags: ["Software", "AI", "Autonomy"],
+    thumbnail: firedetectionThumbnail,
+    shortDescription:
+      "Vision-based wildfire detection system for autonomous drone deployment using YOLO and computer vision.",
+    overview:
+      "Developed an end-to-end wildfire detection pipeline for a drone platform. The system processes video streams to identify smoke and fire regions, triggering autonomous alerts and logging events for further analysis. Optimized detection to run efficiently on limited onboard computational resources.",
+    solution:
+      "Implemented YOLO-based object detection at 2-3 frames per second for real-time processing, while overlaying bounding boxes on the original video for human-in-the-loop verification. Integrated vision system with autonomous flight control to enable precise localization and reporting of detected fire sources.",
+    results: [
+      "Achieved detection accuracy > 92 % on custom wildfire dataset",
+      "Successfully tested autonomous drone response in simulated fire scenarios",
+      "Reduced false positives by 25 % through iterative model tuning"
+    ],
+    techStack: ["Python", "YOLOv8", "OpenCV", "ROS2", "DroneKit", "NumPy", "Pandas"],
+    repoLink: "",
+    demoLink: "",
+    featured: true
+  },
+  
   {
     id: "prosthetic-hand-m2",
     title: "Pulley-Driven Prosthetic Hand (Project M²)",
