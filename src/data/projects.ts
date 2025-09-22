@@ -119,28 +119,28 @@ export const projects: Project[] = [
     video: frcVideo,
     imagePoster: frcPoster
   },
-  {
-    id: "testudog-quadruped",
-    title: "Testudog Quadruped Robot",
-    slug: "testudog-quadruped",
-    year: 2025,
-    tags: ["Design"],
-    thumbnail: quadrupedThumbnail,
-    shortDescription:
-      "Competition-grade quadruped robot with zero-gravity integration test rig.",
-    overview:
-      "Led mechanical team to develop hardware-software integration tests that refine balance and dynamics ahead of ICRA 2026.",
-    solution:
-      "Designed modular frame, custom actuators, and a suspended rig enabling off-ground gait tuning.",
-    results: [
-      "Enhanced hardware–software collaboration workflow",
-      "Prepared robot for autonomous field trials"
-    ],
-    techStack: ["SolidWorks", "Arduino", "ROS2", "PID"],
-    repoLink: "",
-    demoLink: "",
-    featured: false
-  },
+  // {
+  //   id: "testudog-quadruped",
+  //   title: "Testudog Quadruped Robot",
+  //   slug: "testudog-quadruped",
+  //   year: 2025,
+  //   tags: ["Design"],
+  //   thumbnail: quadrupedThumbnail,
+  //   shortDescription:
+  //     "Competition-grade quadruped robot with zero-gravity integration test rig.",
+  //   overview:
+  //     "Led mechanical team to develop hardware-software integration tests that refine balance and dynamics ahead of ICRA 2026.",
+  //   solution:
+  //     "Designed modular frame, custom actuators, and a suspended rig enabling off-ground gait tuning.",
+  //   results: [
+  //     "Enhanced hardware–software collaboration workflow",
+  //     "Prepared robot for autonomous field trials"
+  //   ],
+  //   techStack: ["SolidWorks", "Arduino", "ROS2", "PID"],
+  //   repoLink: "",
+  //   demoLink: "",
+  //   featured: false
+  // },
 
   {
     id: "fire-detection-model",
