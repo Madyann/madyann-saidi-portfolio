@@ -87,7 +87,7 @@ const ProjectCard = ({
       onMouseLeave={() => setHovered(false)}
       onFocus={() => setHovered(true)}
       onBlur={() => setHovered(false)}
-      onClick={handleRootClick}
+      // onClick={handleRootClick}
       tabIndex={0}
       aria-label={project.title}
     >

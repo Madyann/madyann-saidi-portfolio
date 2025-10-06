@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import headshot from "@/assets/headshot.jpg";
 
 const About = () => {
   const skills = [
@@ -83,11 +84,7 @@ const About = () => {
                   {/* gradient frame */}
                   <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20
                                   rounded-2xl border border-border p-1">
-                    <img
-                      src="/headshot.jpg"                /* path in /public */
-                      alt="Professional headshot"
-                      className="w-full h-full rounded-2xl object-cover"
-                    />
+                    <img src={headshot} alt="Professional headshot"/>
                   </div>
                 </div>
               </div>
