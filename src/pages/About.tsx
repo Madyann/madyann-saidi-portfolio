@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import headshot from "@/assets/headshot.jpg";
+import headshot from '../headshot.jpg';
 
 const About = () => {
   const skills = [
