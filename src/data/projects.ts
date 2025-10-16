@@ -212,29 +212,30 @@ export const projects: Project[] = [
     repoLink: "",
     demoLink: "",
     featured: false
-  },
-  {
-    id: "pressure-sensor-analysis",
-    title: "MATLAB Pressure Sensitive Film Analysis Tool",
-    slug: "pressure-sensor-analysis",
-    year: 2025,
-    tags: ["Software"],
-    thumbnail: matlabThumbnail,
-    shortDescription:
-      "Automated test rig that quantifies pressure distribution in human-robot contact scenarios.",
-    overview:
-      "Created a full ADMET setup to measure contact pressure on seven cylindrical fixtures, providing cross-validation data for FEA simulations.",
-    solution:
-      "Integrated pressure-sensitive film, custom MATLAB closed-loop analysis (100+ tunable parameters) and automated report generation.",
-    results: [
-      "Cut analysis time 30× (30 min → 1 min)",
-      "Enabled precise refinement of FEA models for robotic safety standards"
-    ],
-    techStack: ["MATLAB", "SolidWorks", "ADMET", "Pressure Film"],
-    repoLink: "",
-    demoLink: "",
-    featured: false
   }
+  // ,
+  // {
+  //   id: "pressure-sensor-analysis",
+  //   title: "MATLAB Pressure Sensitive Film Analysis Tool",
+  //   slug: "pressure-sensor-analysis",
+  //   year: 2025,
+  //   tags: ["Software"],
+  //   thumbnail: matlabThumbnail,
+  //   shortDescription:
+  //     "Automated test rig that quantifies pressure distribution in human-robot contact scenarios.",
+  //   overview:
+  //     "Created a full ADMET setup to measure contact pressure on seven cylindrical fixtures, providing cross-validation data for FEA simulations.",
+  //   solution:
+  //     "Integrated pressure-sensitive film, custom MATLAB closed-loop analysis (100+ tunable parameters) and automated report generation.",
+  //   results: [
+  //     "Cut analysis time 30× (30 min → 1 min)",
+  //     "Enabled precise refinement of FEA models for robotic safety standards"
+  //   ],
+  //   techStack: ["MATLAB", "SolidWorks", "ADMET", "Pressure Film"],
+  //   repoLink: "",
+  //   demoLink: "",
+  //   featured: false
+  // }
 ];
 
 export const featuredProjects = projects.filter(p => p.featured);
