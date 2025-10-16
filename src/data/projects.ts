@@ -9,6 +9,7 @@ import yumiVideo from '../assets/project-yumi.mp4';
 import yumiPoster from '../assets/project-yumi-poster.jpg';
 import frcThumbnail from '../assets/project-frc.jpg';
 import frcVideo from '../assets/project-frc.mp4';
+import crossfireVideo from '../assets/project-crossfire.mp4'
 import frcPoster from '../assets/project-frc-poster.jpg';
 import quadrupedThumbnail from '../assets/project-quadruped.jpg';
 import prostheticThumbnail from '../assets/project-prosthetic.jpg';
@@ -164,6 +165,7 @@ export const projects: Project[] = [
     techStack: ["Python", "YOLOv8", "OpenCV", "ROS2", "DroneKit", "NumPy", "Pandas"],
     repoLink: "",
     demoLink: "",
+    video: crossfireVideo,
     featured: true
   },
 
