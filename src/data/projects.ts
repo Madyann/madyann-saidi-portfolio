@@ -145,7 +145,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "fire-detection-model",
+    id: "crossfire-fire",
     title: "Autonomous Fire and Smoke Detection Model",
     slug: "fire-detection",
     year: 2025,
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     repoLink: "",
     demoLink: "",
     video: crossfireVideo,
-    featured: true
+    featured: false
   },
 
   {
